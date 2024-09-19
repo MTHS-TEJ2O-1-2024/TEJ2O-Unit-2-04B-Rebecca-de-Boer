@@ -6,6 +6,7 @@
 */
 
 basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 basic.pause(1000)
 
 
