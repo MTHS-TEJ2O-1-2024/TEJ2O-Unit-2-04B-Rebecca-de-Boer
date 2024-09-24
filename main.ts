@@ -2,18 +2,16 @@
  *
  * Created by: Rebecca de Boer
  * Created on: Sep 2024
- * This program Tells tempeture
+ * This program finds temperature.
 */
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 basic.pause(1000)
 
-
-let tempeture = input.temperature()
-
 input.onButtonPressed(Button.A, function () {
-    tempeture = input.temperature()
-    basic.showString('Temp=')
+    let tempeture = input.temperature()
+    basic.showString('The temperature is: ')
     basic.showNumber(tempeture)
+    basic.showString(' C.')
 })
